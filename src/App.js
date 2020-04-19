@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import RedditHome from './containers/RedditHome';
+import RedditHome from './components/RedditHome';
 
 function App() {
   return (
