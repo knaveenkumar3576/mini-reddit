@@ -6,7 +6,7 @@ const StyledPost= styled.div`
         box-sizing: border-box;
         padding: 20px;
         width: 50%;
-        height: 600px;
+        height: 80vh;
         display:block; 
         overflow: scroll;
     }
@@ -23,7 +23,7 @@ const StyledPreview= styled.img`
 
 const StyledTitle= styled.div`
   &&& {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 `;
@@ -32,6 +32,8 @@ const StyledPostContent= styled.p`
   &&& {
     font-size: 15px;
     text-align: left;
+    border: 1px solid;
+    padding: 5px;
 }
 `;
 
@@ -50,8 +52,8 @@ const PostDetail = (props) => {
     return (
         <>
             <StyledPost>
-                <StyledTitle>{props.post.title}</StyledTitle>
                 <StyledPreview src={imageURL}></StyledPreview>
+                <StyledTitle>{props.post.title}</StyledTitle>
                 <StyledPostAuthor> {"Author: " + props.post.author} </StyledPostAuthor>
                 <StyledPostContent>{postContent}</StyledPostContent>
             </StyledPost>

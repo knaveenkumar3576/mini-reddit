@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import SubReddits from '../../components/SubReddits'
-import SubRedditPosts from '../../components/SubRedditPosts'
+import SubReddits from '../SubReddits'
+import SubRedditPosts from '../SubRedditPosts'
 
 const RedditHome = () => {    
     let [selectedSubReddit, setselectedSubReddit] = useState("");

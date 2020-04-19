@@ -6,7 +6,6 @@ import Axios from 'axios';
 const SubRedditPostList = styled.table`
   &&& {
         width: 50%;
-        height: 600px;
         display:block; 
         overflow: scroll;
         td:hover { 
@@ -41,7 +40,7 @@ const Container = styled.div`
         display: flex;
         flex-direction: row;
         text-align: center;
-        height: 600px;
+        height: 80vh;
     }
 `;
 
