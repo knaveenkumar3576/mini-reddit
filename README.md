@@ -17,5 +17,3 @@ Go to http://localhost:3000/. The application should load the search bar and map
 ## Built With
 
 * [React]https://reactjs.org/
-
->>>>>>> abed39765f33743ee12e81f70a0ad4a6c442b7d8
