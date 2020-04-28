@@ -12,11 +12,23 @@ const StyledButton = styled.button`
     }
 `;
 
-const SubReddits = (props) => {
+const SubReddits = ({
+    selectedSubReddit,
+    handleSubRedditSelect,
+    searchSubReddit
+}) => {
     let [subReddits, setSubReddits] = useState([]);
-    
+
     useEffect(() => {
-        Axios.get("https://www.reddit.com/subreddits/popular.json?raw_json=1").then(result => {
+        let url = "";
+        
+        if(searchSubReddit === "") {
+            url = `https://www.reddit.com/subreddits/popular.json?raw_json=1`
+        } else {
+            url = `https://www.reddit.com/subreddits/search.json?q=${searchSubReddit}&raw_json=1`
+        }
+
+        Axios.get(url).then(result => {
             let subReddits = result.data.data.children.map((listing) => {
                 return {
                     name : listing.data.display_name,
@@ -24,17 +36,17 @@ const SubReddits = (props) => {
                 }
             })
             setSubReddits(subReddits)
-            props.handleSubRedditSelect(subReddits[0].url)
+            handleSubRedditSelect(subReddits[0].url)
         })
-    }, [])
+    }, [searchSubReddit])
 
     let subRedditItems = subReddits.map((subReddit) => {
         return (
             <StyledButton    
                 key={subReddit.name} 
-                isActive= {props.selectedSubReddit === subReddit.url}
+                isActive= {selectedSubReddit === subReddit.url}
                 value={subReddit.name} 
-                onClick={() => props.handleSubRedditSelect(subReddit.url)}
+                onClick={() => handleSubRedditSelect(subReddit.url)}
             >
                 {subReddit.name} 
             </StyledButton> 

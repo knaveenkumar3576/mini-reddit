@@ -45,16 +45,15 @@ const StyledPostAuthor= styled.div`
     }
 `;
 
-const PostDetail = (props) => {
-    console.log(props.post)
-    let imageURL = props.post.url.endsWith(".jpg") ? props.post.url : "https://dummyimage.com/300x300&text=No+image+preview!" ;
-    let postContent = props.post.selftext === "" ? "No content available" : props.post.selftext;
+const PostDetail = ({post}) => {
+    let imageURL = post.url.endsWith(".jpg") ? post.url : "https://dummyimage.com/300x300&text=No+image+preview!" ;
+    let postContent = post.selftext === "" ? "No content available" : post.selftext;
     return (
         <>
             <StyledPost>
                 <StyledPreview src={imageURL}></StyledPreview>
-                <StyledTitle>{props.post.title}</StyledTitle>
-                <StyledPostAuthor> {"Author: " + props.post.author} </StyledPostAuthor>
+                <StyledTitle>{post.title}</StyledTitle>
+                <StyledPostAuthor> {"Author: " + post.author} </StyledPostAuthor>
                 <StyledPostContent>{postContent}</StyledPostContent>
             </StyledPost>
         </>
