@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "61e3fc6db7570cc290479fbd3bfe623c",
+    "revision": "ec985ef77670fe156474e065442d21e0",
     "url": "/mini-reddit/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mini-reddit/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "b1b3fe6453a5b752993b",
+    "revision": "28f65728396bc8d29a5b",
     "url": "/mini-reddit/static/css/main.e275826e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mini-reddit/static/js/2.b3faf0e5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b1b3fe6453a5b752993b",
-    "url": "/mini-reddit/static/js/main.6a75e76e.chunk.js"
+    "revision": "28f65728396bc8d29a5b",
+    "url": "/mini-reddit/static/js/main.bfc63c80.chunk.js"
   },
   {
     "revision": "650f11415d76bc2fe91d",
