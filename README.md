@@ -12,8 +12,11 @@ Now run the command "npm install".
 
 You are ready to go. Run "npm start".
 
-Go to http://localhost:3000/. The application should load the search bar and map centered with current location(Try refresh).
+Go to http://localhost:3000/. The application should load the subreddits at the top initially.
 
 ## Built With
 
 * [React]https://reactjs.org/
+
+## Live 
+http://knaveenkumar3576.github.io/mini-reddit
