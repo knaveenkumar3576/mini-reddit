@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import styled from 'styled-components';
-import PostDetail from '../PostDetail'
-import TogglePostType from '../TogglePostType'
+import PostDetail from './components/PostDetail'
+import TogglePostType from './components/TogglePostType'
 import Axios from 'axios';
 
 const SubRedditPostList = styled.table`

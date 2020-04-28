@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import SubReddits from '../SubReddits'
-import SubRedditPosts from '../SubRedditPosts'
-import SearchBar from '../SearchBar';
+import SubReddits from './components/SubReddits'
+import SubRedditPosts from './components/SubRedditPosts'
+import SearchBar from './components/SearchBar';
 
 const RedditHome = () => {    
     let [selectedSubReddit, setselectedSubReddit] = useState("");
